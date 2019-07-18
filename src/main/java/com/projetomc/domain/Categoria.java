@@ -9,14 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-
-@Entity
+@Entity 
 public class Categoria implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -24,12 +19,12 @@ public class Categoria implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
-	
+
 	@JsonManagedReference 
 	@ManyToMany(mappedBy = "categorias")
+	
 	private List<Produto> produtos = new ArrayList<>();
-
-	 
+	
 	public Categoria() {
 	}
 
@@ -38,7 +33,7 @@ public class Categoria implements Serializable {
 		this.id = id;
 		this.nome = nome;
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
