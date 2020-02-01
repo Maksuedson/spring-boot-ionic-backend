@@ -1,4 +1,4 @@
-package com.projetomc.domain;
+	package com.projetomc.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
