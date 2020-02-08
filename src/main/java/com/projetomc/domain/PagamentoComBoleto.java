@@ -2,8 +2,11 @@ package com.projetomc.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
 import com.projetomc.domain.enums.EstadoPagamento;
 
+@Entity
 public class PagamentoComBoleto extends Pagamento{
 	private static final long serialVersionUID = 1L;
 	
@@ -13,10 +16,10 @@ public class PagamentoComBoleto extends Pagamento{
 	public PagamentoComBoleto() {		
 	}
 
-	public PagamentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido, Date dataPagamento, Date dataVencimento) {
+	public PagamentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido, Date dataVencimento, Date dataPagamento) {
 		super(id, estado, pedido);
-		this.dataPagamento = dataPagamento;
 		this.dataVencimento = dataVencimento;
+		this.dataPagamento = dataPagamento;		
 	}
 
 	public Date getDataPagamento() {
