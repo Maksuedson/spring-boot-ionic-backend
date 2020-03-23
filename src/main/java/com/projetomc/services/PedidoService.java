@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.projetomc.domain.Pedido;
 import com.projetomc.repositories.PedidoRepository;
-import com.projetomc.services.exceptions.ObejctNotFoundException;
+import com.projetomc.services.exceptions.ObjectNotFoundException;
 
 
 @Service
@@ -19,7 +19,7 @@ public class PedidoService {
 
 	public Pedido find(Integer id) {
 		Optional<Pedido> obj = repo.findById(id);
-		return obj.orElseThrow(() -> new ObejctNotFoundException(
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Objeto não encontrado! Id: " + id + ", Tipo: " + Pedido.class.getName()));		
 	}
 }
