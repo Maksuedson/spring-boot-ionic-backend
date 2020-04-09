@@ -1,7 +1,8 @@
 package com.projetomc.domain.enums;
 
 public enum TipoCliente {
-	PESSOAFISICA(1, "Pessoa Física"), PESSOAJURIDICA(2, "Pessoa Jurídica");
+	PESSOAFISICA(1, "Pessoa Física"),
+	PESSOAJURIDICA(2, "Pessoa Jurídica");
 
 	private int cod;
 	private String descricao;
@@ -19,17 +20,17 @@ public enum TipoCliente {
 		return descricao;
 	}
 
-	public static TipoCliente toEnum(Integer id) {
+	public static TipoCliente toEnum(Integer cod) {
 
-		if (id == null) {
+		if (cod == null) {
 			return null;
 		}
 		for (TipoCliente x : TipoCliente.values()) {
-			if (id.equals(x.getCod())) {
+			if (cod.equals(x.getCod())) {
 				return x;
 			}
 		}
-		throw new IllegalArgumentException("Id inválido " + id);
+		throw new IllegalArgumentException("Id inválido " + cod);
 	}
 
 }
