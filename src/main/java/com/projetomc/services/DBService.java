@@ -33,29 +33,21 @@ import com.projetomc.repositories.ProdutoRepository;
 @Service
 public class DBService {
 	@Autowired
-	private CategoriaRepository categoriaRepository;
-	
+	private CategoriaRepository categoriaRepository;	
 	@Autowired
 	private ProdutoRepository produtoRepository;
-	
 	@Autowired
 	private CidadeRepository cidadeRepository;
-	
 	@Autowired
 	private EstadoRepository estadoRepository;
-	
 	@Autowired
 	private ClienteRepository clienteRepository;
-	
 	@Autowired
 	private EnderecoRepository enderecoRepository;
-	
 	@Autowired
 	private PedidoRepository pedidoRepository;
-	
 	@Autowired
 	private PagamentoRepository pagamentoRepository;
-	
 	@Autowired
 	private ItemPedidoRepository itemPedidoRepository;
 	
