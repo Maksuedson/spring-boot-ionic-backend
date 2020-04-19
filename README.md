@@ -32,3 +32,10 @@
 <li>Implanta&ccedil;&atilde;o do backend no Heroku</li>
 <li>Implanta&ccedil;&atilde;o da aplica&ccedil;&atilde;o na Play Store</li>
 </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;Envio de emails personalizado:</p>
+<p align="center">
+  <img src="https://github.com/Maksuedson/spring-boot-ionic-backend/blob/master/img/envioEmail.JPG" width="1500" alt="accessibility text">
+</p>
+<p>&nbsp;</p>
