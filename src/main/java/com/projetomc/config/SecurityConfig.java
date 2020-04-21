@@ -24,12 +24,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	private Environment env;
 	
 	public final static String[] PUBLIC_MATCHERS = {
-			"/hd-console/**",
+			"/h2-console/**",
 	};
 	
 	public final static String[] PUBLIC_MATCHERS_GET = {
 			"/produtos/**",
-			"/categorias/**" 
+			"/categorias/**",
+			"/clientes/**"
 	};
 
 	protected void configure(HttpSecurity http) throws Exception {
